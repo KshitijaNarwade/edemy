@@ -1,7 +1,7 @@
 import { Webhook } from "svix";
 import User from "../models/User.js";
-// import stripe from "stripe";
-// import { Purchase } from "../models/Purchase.js";
+import stripe from "stripe";
+import { Purchase } from "../models/Purchase.js";
 import Course from "../models/Course.js";
 
 
@@ -67,7 +67,6 @@ export const clerkWebhooks = async (req, res) => {
 
 
 
-/*
 
 // Stripe Gateway Initialize
 const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY)
@@ -143,4 +142,4 @@ export const stripeWebhooks = async (request, response) => {
 
 
 
-*/
+

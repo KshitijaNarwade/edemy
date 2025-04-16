@@ -95,7 +95,7 @@ export const dummyEducatorData = {
     "_id": "fcddeeb125fbefb46d49afe8",
     "name": "Rani",
     "email": "raninarwade2212@gmail.com",
-    "imageUrl" : "https://i.postimg.cc/RhVyR7NM/cartoon.jpg" 
+    "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
 }
 
 export const dummyDashboardData = {
@@ -106,66 +106,66 @@ export const dummyDashboardData = {
             "student": {
                 "_id": "fcddeeb125fbefb46d49afe8",
                 "name": "rani",
-                "imageUrl":"https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
+                "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
             }
         },
-         {
+        {
             "courseTitle": "Advanced Python Programming",
             "student": {
                 "_id": "fcddeeb125fbefb46d49afe8",
                 "name": "rani",
-                "imageUrl":"https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
+                "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
             }
-        },{
+        }, {
             "courseTitle": "Web Development Bootcamp",
             "student": {
                 "_id": "fcddeeb125fbefb46d49afe8",
                 "name": "rani",
-                "imageUrl":"https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
+                "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
             }
         },
-         {
+        {
             "courseTitle": "Data Science with Python",
             "student": {
                 "_id": "fcddeeb125fbefb46d49afe8",
                 "name": "rani",
-                "imageUrl":"https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
+                "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
             }
         },
     ],
-    "totalCourses" :8
+    "totalCourses": 8
 }
 
 export const dummyStudentEnrolled = [
     {
-    "student": {
+        "student": {
             "id": "fcddeeb125fbefb46d49afe8",
             "name": "Rani",
-        "imageUrl" : "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
+            "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
         },
         "courseTitle": "Introduction to JavaScript"
     },
     {
-    "student": {
+        "student": {
             "id": "fcddeeb125fbefb46d49afe8",
             "name": "Rani",
-        "imageUrl" : "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
+            "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
         },
         "courseTitle": "Introduction to JavaScript"
     },
     {
-    "student": {
+        "student": {
             "id": "fcddeeb125fbefb46d49afe8",
             "name": "Rani",
-        "imageUrl" : "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
+            "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
         },
         "courseTitle": "Advanced Python Programming"
     },
     {
-    "student": {
+        "student": {
             "id": "fcddeeb125fbefb46d49afe8",
             "name": "Rani",
-        "imageUrl" : "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
+            "imageUrl": "https://i.postimg.cc/RhVyR7NM/cartoon.jpg"
         },
         "courseTitle": "Web Development Bootcamp"
     }
@@ -197,7 +197,7 @@ export const dummyTestimonial = [
 
 export const dummyCourses = [
     {
-        "_id" :'67f8aa03864cfc42bf01b6a2',
+        "_id": '67f8aa03864cfc42bf01b6a2',
         "courseTitle": "Introduction to JavaScript",
         "courseDescription": `
             <h2>Learn the Basics of JavaScript</h2>
@@ -261,7 +261,7 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "605c72efb3f1c2b1f8e4e1a1", 
+        "educator": "605c72efb3f1c2b1f8e4e1a1",
         "courseRatings": [
             {
                 "userId": "user1",
@@ -273,11 +273,11 @@ export const dummyCourses = [
             }
         ],
         "enrolledStudents": [
-        
+
         ]
     },
     {
-        "_id" :'67f8aa03864cfc42bf01b6a3',
+        "_id": '67f8aa03864cfc42bf01b6a3',
         "courseTitle": "Advanced Python Programming",
         "courseDescription": `
             <h2>Deep Dive into Python Programming</h2>
@@ -341,7 +341,7 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "605c72efb3f1c2b1f8e4e1a4", 
+        "educator": "605c72efb3f1c2b1f8e4e1a4",
         "courseRatings": [
             {
                 "userId": "user3",
@@ -353,11 +353,11 @@ export const dummyCourses = [
             }
         ],
         "enrolledStudents": [
-           
+
         ]
     },
     {
-        "_id" :'67f8aa03864cfc42bf01b6a4',
+        "_id": '67f8aa03864cfc42bf01b6a4',
         "courseTitle": "Web Development Bootcamp",
         "courseDescription": `
             <h2>Become a Full-Stack Web Developer</h2>
@@ -421,7 +421,7 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "605c72efb3f1c2b1f8e4e1a7", 
+        "educator": "605c72efb3f1c2b1f8e4e1a7",
         "courseRatings": [
             {
                 "userId": "user5",
@@ -431,17 +431,17 @@ export const dummyCourses = [
                 "userId": "user6",
                 "rating": 5
             },
-             {
+            {
                 "userId": "user7",
                 "rating": 1
             }
         ],
         "enrolledStudents": [
-           
+
         ]
     },
     {
-        "_id":'67f8d46c014d11eec0291035',
+        "_id": '67f8d46c014d11eec0291035',
         "courseTitle": "Data Science and Machine Learning",
         "courseDescription": `
             <h2>Unlock the Power of Data</h2>
@@ -505,7 +505,7 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "605c72efb3f1c2b1f8e4e1aa", 
+        "educator": "605c72efb3f1c2b1f8e4e1aa",
         "courseRatings": [
         ],
         "enrolledStudents": [
@@ -513,3 +513,65 @@ export const dummyCourses = [
         ]
     }
 ];
+
+
+
+// https://youtu.be/5RiZQoULuJ8
+
+const courseData = {
+    "courseTitle": "Test Course Title",
+    "courseDescription": "Test Course Description",
+    "coursePrice": 50,
+    "discount": 10,
+    "courseContent": [{
+        "chapterId": "ch01",
+        "chapterOrder": "",
+        "chapterTitle": "Test Chapter Title",
+        "chapterContent": [
+            {
+                "lectureId": "lec01",
+                "lectureTitle": "Test lecture Title",
+                "lectureDuration": 20,
+                "lectureUrl": "https://youtu.be/H2-jYzRfk9U",
+                "isPreviewFree": "true",
+                "lectureOrder": "",
+            }],
+    }],
+}
+const newJsong = {
+    "courseTitle": "Introduction to php",
+    "courseDescription": "A beginner-friendly course to learn the fundamentals of php.",
+    "courseThumbnail": "https://i.postimg.cc/DZHmPCXd/php.jpg",
+    "coursePrice": 49.99,
+    "isPublished": true,
+    "discount": 10,
+    "courseContent": [
+        {
+            "chapterTitle": "Getting Started with php",
+            "chapterOrder": 1,
+            "chapterId": "getting_started",
+            "chapterContent": [
+                {
+                    "lectureTitle": "What is php?",
+                    "lectureUrl": "https://youtu.be/H2-jYzRfk9U",
+                    "lectureDuration": 3,
+                    "lectureOrder": 1,
+                    "isPreviewFree": true,
+                    "lectureId": "php_34dfgbsdf"
+                },
+                {
+                    "lectureTitle": "Installing Python",
+                    "lectureUrl": "https://youtu.be/n04w2SzGr_U",
+                    "lectureDuration": 1,
+                    "lectureOrder": 2,
+                    "isPreviewFree": false,
+                    "lectureId": "install_php3sge23k"
+                }
+            ]
+        }
+        
+    ],
+    "educator": "user_2vfcPBvvxKuFMWSlke0tUtHKhBY", 
+    "courseRatings": [],
+    "enrolledStudents": []
+}

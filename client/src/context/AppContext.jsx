@@ -73,18 +73,18 @@ export const AppContextProvider = (props) => {
 
   // Fetch User Enrolled Courses
   const fetchUserEnrolledCourses = async () => {
-    // const token = await getToken();
+    const token = await getToken();
 
-    // const { data } = await axios.get(
-    //   backendUrl + "/api/user/enrolled-courses",
-    //   { headers: { Authorization: `Bearer ${token}` } }
-    // );
+    const { data } = await axios.get(
+      backendUrl + "/api/user/enrolled-courses",
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
 
-    // if (data.success) {
-    //   setEnrolledCourses(data.enrolledCourses.reverse());
-    // } else toast.error(data.message);
+    if (data.success) {
+      setEnrolledCourses(data.enrolledCourses.reverse());
+    } else toast.error(data.message);
 
-    setEnrolledCourses(dummyCourses);
+    // setEnrolledCourses(dummyCourses);
   };
 
 
@@ -93,6 +93,16 @@ export const AppContextProvider = (props) => {
     fetchAllCourses()
     fetchUserEnrolledCourses()
   }, []);
+
+  const logToken = async () => {
+    console.log(await getToken())
+  }
+
+  useEffect(() => {
+    if (user) {
+      logToken();
+    }
+  }, [user]);
 
   const value = {
     showLogin,
