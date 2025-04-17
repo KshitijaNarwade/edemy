@@ -3,7 +3,7 @@ import { AppContext } from "../../context/AppContext";
 import axios from "axios";
 import { Line } from "rc-progress";
 import Footer from "../../components/student/Footer";
-import { en, tr } from "@faker-js/faker";
+import { toast } from "react-toastify";
 
 const MyEnrollments = () => {
   const {
@@ -17,22 +17,38 @@ const MyEnrollments = () => {
     calculateNoOfLectures,
   } = useContext(AppContext);
 
-  const [progressArray, setProgressData] = useState([
-    { lectureCompleted: 2, totalLectures: 4 },
-    { lectureCompleted: 1, totalLectures: 4 },
-    { lectureCompleted: 6, totalLectures: 10 },
-    { lectureCompleted: 2, totalLectures: 9 },
-    { lectureCompleted: 2, totalLectures: 4 },
-    { lectureCompleted: 1, totalLectures: 5 },
-    { lectureCompleted: 2, totalLectures: 8 },
-    { lectureCompleted: 0, totalLectures: 10 },
-    { lectureCompleted: 1, totalLectures: 8 },
-    { lectureCompleted: 2, totalLectures: 9 },
-    { lectureCompleted: 1, totalLectures: 3 },
-    { lectureCompleted: 6, totalLectures: 8 },
-    { lectureCompleted: 4, totalLectures: 5 },
-    { lectureCompleted: 1, totalLectures: 4 },
-  ]);
+  const [progressArray, setProgressArray] = useState([]);
+
+  const getCourseProgress = async () => {
+    try {
+      const token = await getToken();
+      const tempProgressArray = await Promise.all(
+        enrolledCourses.map(async (course) => {
+          const { data } = await axios.post(`${backendUrl}/api/user/get-course-progress`, { courseId: course._id }, { headers: { Authorization: `Bearer ${token}` } })
+          let totalLectures = calculateNoOfLectures(course);
+          const lectureCompleted = data.progressData ? data.progressData.lectureCompleted.length : 0;
+          return {totalLectures, lectureCompleted}
+        })
+      )
+      setProgressArray(tempProgressArray);
+
+    } catch (error) {
+      toast.error(error.message);
+    }
+  }
+
+  useEffect(() => {
+    if (userData) {
+      fetchUserEnrolledCourses()
+    }
+  }, [userData])
+  
+  useEffect(() => {
+  if (enrolledCourses.length > 0) {
+    getCourseProgress()
+  }
+},[enrolledCourses])
+
 
   return (
     <>
@@ -92,3 +108,5 @@ const MyEnrollments = () => {
 };
 
 export default MyEnrollments;
+
+
